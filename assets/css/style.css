@@ -54,7 +54,7 @@ h2{
 
 .navbar{
 	width: 100%;
-	height: 50px;
+	height: 40px;
 	color: black;
 	position: sticky;
 	margin: 0;
@@ -68,10 +68,11 @@ h2{
 
 .edit_nav{
 	color: white;
-	background-color: #05B8CC;
+	background-color: white; 
+	/*#05B8CC;*/
 }
 
-#navbar-nav > ul > li > a:hover{
+#navbar-nav > ul > li:hover{
 	background-color: turquoise;
 	color: black;
 }
@@ -99,9 +100,10 @@ h2{
 }
 
 
-.content{
+#content{
 	min-height: 100vh;
 	width: 100%;
+	padding: 100px;
 }
 
 .landing,
@@ -118,4 +120,15 @@ h2{
 	from { top: 0; left: 0; }
   	to   { top: 38%; left: 50%; }
 }
+
+.header_image{
+	background-image: url(../images/header.png);
+	background-position: bottom;
+	background-size: cover;
+	margin-bottom: -38px;
+	width: 100%;
+	height: 150px;
+}
+
+
 
