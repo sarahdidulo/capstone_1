@@ -87,6 +87,20 @@ h2{
 	height: 30px;
 }
 
+.content{
+	height: 250px;	
+	background-color: #00C5CD;
+	border-radius: 15px;
+	padding: 3%;
+	color: black;
+	width: 50%;
+	margin-top: -3%;
+	margin-left: 25%;
+	text-align: justify;
+	z-index: -2	;
+}
+
+
 .logo{
 	height: 300px;
 	width: 25%;
@@ -97,22 +111,6 @@ h2{
 	display: block;
 	z-index:2;
 }
-
-
-.content{
-	height: 250px;	
-	background-color: #00C5CD;
-	border-radius: 15px;
-	padding: 50px;
-	color: black;
-	width: 50%;
-	margin-left: 25%;
-	margin-top: -10px;
-	z-index: -2	;
-}
-
-
-
 
 .landing{
 	min-height: 100vh;
@@ -139,9 +137,14 @@ h2{
 
 .card{
 	width: 50%;
-	height: 300px;
-	margin-top: 30%;
+	margin: auto;
+	margin-top: 4%;
+	margin-bottom: 4%;
 	/*margin-left: 50%;*/
+}
+
+.card-title{
+	margin-top: 0;
 }
 
 h3{
