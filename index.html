@@ -14,10 +14,15 @@
 
 	<!-- fonts -->
 
-	<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Magra:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+
 
 	<!-- bootstrap css --> <!-- should come first before external css para mag override ung bootstrap sa external css-->
 
@@ -26,6 +31,8 @@
 	<!-- external css -->
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link rel="icon" type="image/gif/png" href="assets/images/travel_logo.png">
 
 
 	<!-- scripts -->
@@ -39,57 +46,67 @@
 <body>
 	<!-- <div class="container-fluid"> -->
 
-		<div class="container-fluid">
+		<div id="turquoise" class="container-fluid">
 
 			<div class="row no gutters">
-				<div id="white" class="col-12 col-md-12">
+				<div id="white" class="col-12 col-md-12 p-0 m-0">
 
 
-				<div class="landing">
+				<div id="home" class="landing">
+
+					<div class="header2">
+						<a href=#about id="arrow"><img src="assets/images/arrow.png"></a>
+					</div>
+
+				<div class="header text-center">
+				<span>THE <br>TRAVEL<br> DIARY</span>
+				</div>
 
 				<div id="carousel-home" class="carousel slide" data-ride="carousel"> <!-- data ride animates the carousel -->
 			
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-home" data-slide-to="1"></li>
-				<li data-target="#carousel-home" data-slide-to="2"></li>
-			</ol>
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-home" data-slide-to="1"></li>
+						<li data-target="#carousel-home" data-slide-to="2"></li>
+					</ol>
 
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="d-block img-fluid w-100 h-100" src="assets/images/bg.jpg">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block img-fluid w-100 h-100" src="assets/images/bg.jpg">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block img-fluid w-100 h-100" src="assets/images/bg2.jpg">
+						</div>
+
+						<div class="carousel-item">
+							<img class="d-block img-fluid w-100 h-100" src="assets/images/bg3.jpg">
+						</div>
+
+						<a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+
+						<a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+							<span class="sr-only">Next</span>
+						</a>
+
 				</div>
+			</div> <!-- carousel home -->
 
-				<div class="carousel-item">
-					<img class="d-block img-fluid w-100 h-100" src="assets/images/bg2.jpg">
-				</div>
-
-				<div class="carousel-item">
-					<img class="d-block img-fluid w-100 h-100" src="assets/images/bg3.jpg">
-				</div>
-
-				<a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-
-				<a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
-					<span class="sr-only">Next</span>
-				</a>
-
-			</div>
-		</div> <!-- carousel home -->
 
 		</div>
 		</div> <!-- col -->
-		<button type ="button" class="btn btn-primary"> Explore more</button>
+
+	<!-- 	<button type ="button" class="btn btn-primary"> Explore more</button> -->
 		</div> <!-- row -->
 
 			
-				<div class="header">
-		<h1>The Travel<br> Diary</h1>
-			</div>
+		
+
+
 
 
 
@@ -105,127 +122,167 @@
 
 		</div>  --> <!-- end of landing page -->
 
+		<div class="row no gutters">
 
-		<nav class="navbar sticky-top navbar-expand-lg navbar-light edit_nav">
-			<a class="navbar-brand" href="#home">
-				<img class="sd_white" src="assets/images/SD_white.png">
-			</a>
+			<div class="col-12 col-md-12 col-lg-12 p-0">
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
 
-			<div id="navbar-nav" class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#home">Home</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-
-					 <li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				         Travels
-				        </a>
-				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				          <a class="dropdown-item" href="#">International</a>
-				          <a class="dropdown-item" href="#">Domestic</a>
-				        </div>
-				      </li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-
-				</ul>
-
-			</div> <!-- end of div navbar nav -->
-			
-			</nav><!--  end nav	 -->
-		
 
 		
+				<nav class="navbar sticky-top navbar-expand-lg navbar-light edit_nav">
+					<a class="navbar-brand" href="index.html">
+						<img class="sd_white" src="assets/images/travel_logo.png">
+					</a>
 
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
+					<div id="navbar-nav" class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#home">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+
+							 <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						         Travels
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						           <a class="dropdown-item" href="north_america.html">North America</a>
+						          <a class="dropdown-item" href="south_america.html">South America</a>
+						          <a class="dropdown-item" href="europe.html">Europe</a>
+						          <a class="dropdown-item" href="africa.html">Africa</a>
+						          <a class="dropdown-item" href="asia.html">Asia</a>
+						          <a class="dropdown-item" href="australia.html">Australia</a>
+						          <div class="dropdown-divider"></div>
+						          <a class="dropdown-item" href="domestic_travels.html">Domestic Travels</a>
+						        </div>
+						      </li>
+
+						</ul>
+
+					</div> <!-- end of div navbar nav -->
+					
+					</nav><!--  end nav	 -->
+		</div>
+		
+
+		</div>
 
 		<div id="row1" class="row no gutters"> 
 
-			<div id= "white" class="col-12 col-md-12 col-lg-10 offset-lg-1">
- 	 
- 	 		
+			<div id= "white" class="col-12 col-md-12 col-lg-3 offset-lg-1 p-0">
 
-					<img class= "logo" src="assets/images/logo.jpg">
+				<img id="logo" class= "logo" src="assets/images/logo.jpg">
 
-				<div class="content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-
-
-		</div>
-
-
-		</div>
-
-
-		<div class="row no gutters">
-			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1">
-				<h3 class="Recent Travels">Recent Travels</h3>
 			</div>
-		</div>
 
-		<div class="row no gutters">
-			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1">
-				
-				
-				<div class="card">
-						<img class="card-img-top img-fluid" src="assets/images/bg.jpg">
-
-						<div class="card-body">
-							<h3 class="card-title">Service 1</h3>
-							<p class="card-text">short description about the service of the company</p>
-
-						</div>
-
-					</div>
-			</div>
-		</div>
-
-		<div class="row no gutters">
-			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1">
-				
-				
-				<div class="card">
-						<img class="card-img-top img-fluid" src="assets/images/bg.jpg">
-
-						<div class="card-body">
-							<h3 class="card-title">Service 1</h3>
-							<p class="card-text">short description about the service of the company</p>
-
-						</div>
-
-					</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1">
-				<div class="map">
-				<img id="na" src="assets/images/na.png">
-				<img id="sa" src="assets/images/sa.png">
-				<img id="africa" src="assets/images/africa.png">
-				<img id="europe" src="assets/images/europe.png">
-				<img id="asia" src="assets/images/asia.png">
-				<img id="australia" src="assets/images/australia.png">
+			<div id= "white" class="col-12 col-md-12 col-lg-7 p-0">
+ 	 			<div id="about" class="content">		
+ 	 				<h4>Welcome!</h4>
+					<p class="about_the_blogger">	
+						My name is Mimi, a traveler by day, a blogger and web developer by night. Travelling has not only fascinated me with beautiful landmarks and places, but has inspired me more to appreciate what life has to offer each day. I hope this blog would envision dreamers start their journey and explore other parts of the world. 
+					</p>
 				</div>
 			</div>
 		</div>
+
+
+		<div class="row">
+			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1 p-0 d-none d-lg-block">
+
+				<div class="header_of_map">
+				<p>Travels across the globe</p>
+				<p id="choose">Choose a region</p></div>
+				<div id="travels" class="map">
+					<a href="north_america.html" target="_blank"><img id="na" src="assets/images/na.png"></a>
+					<a href="south_america.html" target="_blank"><img id="sa" src="assets/images/sa.png"></a>
+					<a href="africa.html" target="_blank"><img id="africa" src="assets/images/africa.png"></a>
+					<a href="europe.html" target="_blank"><img id="europe" src="assets/images/europe.png"></a>
+					<a href="asia.html" target="_blank"><img id="asia" src="assets/images/asia.png"></a>
+					<a href="australia.html" target="_blank"><img id="australia" src="assets/images/australia.png"></a>
+					<span id="na_txt">North America</span>
+					<span id="sa_txt">South America</span>
+					<span id="africa_txt">Africa</span>
+					<span id="europe_txt">Europe</span>
+					<span id="asia_txt">Asia</span>
+					<span id="australia_txt">Australia</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row no gutters">
+			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1">
+				<h3 class="recent_travels">Recent Travels</h3>
+			</div>
+		</div>
+
+		<div class="row no gutters">
+			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1 h-100">
+				
+				
+				<div id="card1" class="card">
+						<img class="card-img-top img-fluid" src="assets/images/na-1.jpg">
+
+						<div class="card-body">
+							<p id="card-title1" class="card-title">5 Days in New York: The Ultimate New York City Itinerary</p>
+							<p id="card-text1" class="card-text">With 5 days in New York City, you can visit the icons of New York…the Statue of Liberty, the Empire State Building, Times Square, and Central Park…and also have enough time to explore different neighborhoods, try new foods, and see a Broadway show. We put together this 5 day New York City itinerary to help you have the best experience here.</p>
+							<u><a class="link2" href="na-ny.html" target="_blank">View Blog</a></u>
+
+						</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row no gutters">
+			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1">
+				
+				
+				<div id="card1" class="card">
+						<img class="card-img-top img-fluid" src="assets/images/na-7.jpg">
+
+						<div class="card-body">
+							<p id="card-title1">5 Unforgettable Places to Stop on the Icefields Parkway, Canada</p>
+							<p is="card-text1">If you thought Canada was all moose, “eh” and maple syrup – think again. There is one road in Canada that will leave you breathless.</p>
+							<u><a class="link2" href="na-canada.html" target="_blank">View Blog</a></u>
+						</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row no gutters">
+			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1">
+				
+				<u><a href="all_travels.html" target="_blank" class="view_all">View all recent travels</a></u>
+				
+			</div>
+		</div>
+
+
+		<div class="row no gutters">
+			<div id="white" class="col-12 col-md-12 col-lg-10 offset-lg-1 text-right">
+				
+				<div class="social">
+					<p>We're also on the following social media sites:</p>
+					<a href="https://www.facebook.com/sarah.didulo" target="_blank"><img id="social" src="assets/images/fb_logo.png"></a>
+					<a href="https://www.instagram.com/sarah_didulo/" target="_blank"><img id="social" src="assets/images/instagram_logo.png"></a>
+					<a href="https://twitter.com/sarah_didulo" target="_blank"><img id="social" src="assets/images/twitter_logo.png"></a>
+
+				</div>
+			</div>
+		</div>
+
+
+	
 
 
 		<!-- <div class="row no gutters">
@@ -328,6 +385,19 @@
 
 	<!-- </div> -->
 
+
+
+			<div class="row">
+			
+				<div class="col-12 col-md-12 col-lg-12 p-0 m-0">
+				<footer class="footer bg-info footer_edit">
+					
+					<p class="text-center mb-0">Sarah Didulo &copy 2018 | Tuitt Coding Bootcamp</p> <!-- p is padding -->
+					
+				</footer>
+				</div>
+			
+			</div>
 
 		
 		</div>
